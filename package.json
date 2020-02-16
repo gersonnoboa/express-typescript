@@ -8,7 +8,7 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",
     "prod": "tsc && node ./build/app.js"
   },
@@ -28,7 +28,11 @@
     "ts-node-dev": "^1.0.0-pre.42"
   },
   "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/node": "^13.7.1",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
     "tslint": "^5.19.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.7.5"
   }
 }
